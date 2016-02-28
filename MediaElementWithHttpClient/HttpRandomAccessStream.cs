@@ -88,8 +88,20 @@ namespace MediaElementWithHttpClient
             {
                 lastModifiedHeader = response.Content.Headers["Last-Modified"];
             }
+            if (response.Content.Headers.ContainsKey("Content-Type"))
+            {
+                contentType = response.Content.Headers["Content-Type"];
+            }
 
             inputStream = await response.Content.ReadAsInputStreamAsync().AsTask().ConfigureAwait(false);
+        }
+
+        private string contentType = string.Empty;
+
+        public string ContentType
+        {
+            get { return contentType; }
+            private set { contentType = value; }
         }
 
         public bool CanRead
