@@ -64,7 +64,7 @@ namespace MediaElementWithHttpClient
             HttpRandomAccessStream stream = await HttpRandomAccessStream.CreateAsync(client, uri);
 
             // If you need to use HttpClient, use MediaElement.SetSource() instead of MediaElement.Source.
-            mediaPlayer.SetSource(stream, "audio/mpeg");
+            mediaPlayer.SetSource(stream, stream.ContentType);
         }
 
         private async void OnButtonPressed(SystemMediaTransportControls sender, SystemMediaTransportControlsButtonPressedEventArgs args)
