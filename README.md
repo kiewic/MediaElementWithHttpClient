@@ -34,6 +34,14 @@ The `HttpRandomAccessStream` class is a wrapper on top of `HttpClient` that can 
 
 **Note:** The server must support HTTP [Range](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.5) headers.
 
+### Windows8 vs Windows10 solutions.
+
+Both solutions are equivalent, and the `HttpRandomAccessStream` class is the same in both solutions. 
+
+The **Windows8** solution is targeted for **Windows 8.1** and it loads great in **Visual Studio 2013**.
+
+The **Windows10** solution is targeted for **Windows 10** (Universal Windows) and it loads great in **Visual Studio 2015**. 
+
 ### Feedback
 
 Please give it a try and provide feedback.
