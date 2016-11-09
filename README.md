@@ -42,10 +42,11 @@ The **Windows8** solution is targeted for **Windows 8.1** and it loads great in 
 
 The **Windows10** solution is targeted for **Windows 10** (Universal Windows) and it loads great in **Visual Studio 2015**. 
 
-### Feedback
+### Windows.UI.Xaml.Controls.MediaPlayerElement
 
-Please give it a try and provide feedback.
+For an example with `MediaPlayerElement`, please go to [kiewic/MediaPlayerElementWithHttpClient][MediaPlayerElementWithHttpClient] repository. 
 
 
 [mediaelement]: https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.mediaelement.aspx
 [httpclient]: https://msdn.microsoft.com/en-us/library/windows/apps/windows.web.http.httpclient.aspx
+[MediaPlayerElementWithHttpClient]: https://github.com/kiewic/MediaPlayerElementWithHttpClient
